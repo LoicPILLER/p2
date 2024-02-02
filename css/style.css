@@ -1,6 +1,9 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -22,7 +25,6 @@ body {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
-    box-sizing: border-box;
 }
 
 section {
@@ -32,6 +34,19 @@ section {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+button {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+}
+
+.show-more-btn {
+    color: black;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .cards-container {
@@ -62,17 +77,20 @@ a {
     color: var(--main-bg-color)
 }
 
+.col {
+    display: flex;
+    flex-direction: column;
+}
 
 /****** Header ***********/
 
 header {
-    height: 79px;
     display: flex;
     margin-bottom: 30px;
 }
 
 .logo-container {
-    padding: 30px 50px;
+    margin-top: auto;
 }
 
 #header-logo {
@@ -89,28 +107,85 @@ nav {
 
 nav a {
     padding-top: 16px;
-    border-top: 2px;
+    border-top: transparent solid 2px;
 }
 
-nav a:hover {
+nav a.active {
     color: var(--main-color);
+    border-top: var(--main-color) solid 2px;
 }
 
 
-/****** Infos ***********/
+/****** Search ***********/
+
+.search {
+    gap: 20px;
+}
+
+.search form {
+    border: var(--main-bg-color) solid 2px;
+    border-radius: 15px;
+    margin-right: auto;
+}
+
+.search input {
+    border: none;
+}
+
+.search form .fa-solid {
+    color: black;
+    padding: 10px;
+    background-color: var(--main-bg-color);
+}
+
+.info-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-bar i {
+    padding: 3px 8px;
+    border: var(--main-bg-color) solid 1px;
+    border-radius: 50%;
+}
 
 .filters-container {
     display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
+.chip {
+    padding: 10px;
+    border: var(--main-bg-color) solid 2px;
+    border-radius: 30px;
+}
+
+.chip:hover {
+    background-color: var(--filter-bg-color);
+}
+
+/****** Accomodations & populars ***********/
+
+.accommodations-and-populars {
+    gap: 30px;
+}
 
 /****** Accomodations ***********/
-
-.accommodations .cards-container {
-
+.accommodations {
+    background-color: var(--main-bg-color);
+    border-radius: 15px;
+    padding: 20px;
 }
 
 /****** Most Populars ***********/
+
+.most-populars {
+    background-color: var(--main-bg-color);
+    border-radius: 15px;
+    padding: 20px;
+}
 
 .most-populars-title {
     display: flex;

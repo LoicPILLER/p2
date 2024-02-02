@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <div class="main-container col">
 
         <header>
 
@@ -24,48 +24,51 @@
             </div>
 
             <nav>
-                <a>Hébergement</a>
-                <a>Activités</a>
+                <a class="active" href="#">Hébergement</a>
+                <a href="#">Activités</a>
             </nav>
 
         </header>
 
         <main>
 
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-            <p>En plein centre-ville ou en pleine nature</p>
+            <section class="search col">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre-ville ou en pleine nature</p>
 
-            <form>
-                <label for="search-input"><i></i></label>
-                <input type="search" id="search-input" value="Marseille, France"/>
-                <button type="submit">Rechercher</button>
-            </form>
+                <form>
+                    <label for="search-input"><i class="fa-solid fa-location-dot"></i></label>
+                    <input type="search" id="search-input" value="Marseille, France"/>
+                    <button type="submit">Rechercher</button>
+                </form>
 
-            <div class="filters-container">
-                <h3>Filtres</h3>
+                <div class="filters-container">
+                    <h3>Filtres</h3>
 
-                <div class="chip">
-                    <i></i>
-                    <span>Économique</span>
-                </div>
-                <div class="chip">
-                    <i></i>
-                    <span>Familial</span>
-                </div>
-                <div class="chip">
-                    <i></i>
-                    <span>Romantique</span>
-                </div>
-                <div class="chip">
-                    <i></i>
-                    <span>Nos pépites</span>
-                </div>
+                    <div class="chip">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <span>Économique</span>
+                    </div>
+                    <div class="chip">
+                        <i class="fa-solid fa-person"></i>
+                        <span>Familial</span>
+                    </div>
+                    <div class="chip">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Romantique</span>
+                    </div>
+                    <div class="chip">
+                        <i class="fa-solid fa-fire"></i>
+                        <span>Nos pépites</span>
+                    </div>
 
-                </div>
+                    </div>
 
-                <div class="info-bar">
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
+                    <div class="info-bar">
+                        <i class="fa-solid fa-info"></i>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
+            </section>
 
             <section class="accommodations-and-populars">
 
@@ -188,7 +191,7 @@
                         </a>
 
                     </div>
-                    <h3><a>Afficher plus</a></h3>
+                    <button class="show-more-btn">Afficher plus</button>
 
                 </div>
 
@@ -303,23 +306,23 @@
 
         <footer>
 
-            <div>
+            <div class="col">
                 <h3>À propos</h3>
-                <p><a>Fonctionnement du site</a></p>
-                <p><a>Conditions générales</a></p>
-                <p><a>Données et confidentialité</a></p>
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Conditions générales</a>
+                <a href="#">Données et confidentialité</a>
             </div>
 
-            <div>
+            <div class="col">
                 <h3>Nos hébergements</h3>
-                <p><a>Charte qualité</a></p>
-                <p><a>Proposer votre hôtel</a></p>
+                <a href="#">Charte qualité</a>
+                <a href="#">Proposer votre hôtel</a>
             </div>
 
-            <div>
+            <div class="col">
                 <h3>Assistance</h3>
-                <p><a>Centre d’aide</a></p>
-                <p><a>Nous contacter</a></p>
+                <a href="#">Centre d’aide</a>
+                <a href="#">Nous contacter</a>
             </div>
 
         </footer>
