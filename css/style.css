@@ -64,6 +64,7 @@ button {
 
 .card_horizontal {
     display: flex;
+    width: 100%;
 }
 
 .card img {
@@ -214,7 +215,7 @@ nav a.active {
 
 .accommodations .card img {
     width: 100%;
-    height: 100px;
+    height: 130px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -243,8 +244,9 @@ nav a.active {
 }
 
 .most-populars .card img {
+    max-width: 100px;
     width: 35%;
-    height: 130px;
+    min-height: 150px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -265,15 +267,17 @@ nav a.active {
 
 .activities .cards-container {
     gap: 30px;
+    width: 100%;
 }
 
 
 .activities .card {
     padding: 0;
+    width: 20%;
 }
 
 .activities .card img {
-    width: 300px;
+    width: 100%;
     height: 380px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -290,4 +294,106 @@ footer {
     justify-content: space-between;
     background-color: var(--main-bg-color);
     padding: 20px;
+}
+
+footer .col {
+    gap: 15px;
+}
+
+
+/*****************
+ * MEDIA QUERIES *
+ *****************/
+
+/* Tablete */
+@media (max-width: 1300px) {
+
+    body {
+        background-color: #c3ecff;
+    }
+
+    /****** Accomodations & populars ***********/
+
+    .accommodations-and-populars {
+        flex-direction: column;
+    }
+
+    /****** Most populars ***********/
+
+    .most-populars {
+        width: 100%;
+    }
+
+    .most-populars .cards-container {
+        flex-wrap: nowrap;
+    }
+
+    .most-populars card {
+        width: 30%;
+    }
+    .most-populars card img {
+        width: 80px;
+        height: auto;
+    }
+
+    /****** Activities ***********/
+
+    .activities .card img {
+        height: 180px;
+    }
+
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 787px) {
+
+    body {
+        background-color: #ffc3c3;
+    }
+
+    .main-container {
+        padding: 0;
+    }
+
+    /****** Header ***********/
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        padding: 30px;
+    }
+
+    nav {
+        margin-left: 0;
+        width: 100%;
+        padding: 0;
+        gap: 0;
+    }
+
+    nav a {
+        padding-bottom: 16px;
+        border: none;
+        border-bottom: transparent solid 2px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a.active {
+        border: none;
+        color: var(--main-color);
+        border-bottom: var(--main-color) solid 2px;
+    }
+
+
+    main {
+        padding: 30px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
 }
