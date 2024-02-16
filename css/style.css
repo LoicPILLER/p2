@@ -16,6 +16,10 @@
     color: var(--main-color);
 }
 
+.fa-magnifying-glass {
+    color: white;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -149,12 +153,16 @@ nav a.active {
     border-bottom: var(--main-bg-color) solid 2px;
 }
 
-.search form .fa-solid {
+#loc-search-icon {
     color: black;
     padding: 12px;
     background-color: var(--main-bg-color);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+}
+
+#search-icon-button {
+    display: none;
 }
 
 .info-bar {
@@ -169,14 +177,21 @@ nav a.active {
     border-radius: 50%;
 }
 
-.filters-container {
+.filters {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px 10px;
+}
+
+.chips-container {
+    display: flex;
+    gap: 20px 10px;
 }
 
 .chip {
-    padding: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 15px;
     border: var(--main-bg-color) solid 2px;
     border-radius: 30px;
     cursor: pointer;
@@ -355,11 +370,16 @@ footer .col {
         padding: 0;
     }
 
+    main {
+        padding: 30px 20px;
+    }
+
     /****** Header ***********/
 
     header {
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
 
     .logo-container {
@@ -388,9 +408,38 @@ footer .col {
     }
 
 
-    main {
-        padding: 30px;
+    /****** Search ***********/
+
+    .search form {
+        margin: 15px auto;
     }
+
+    #search-text-button {
+        display: none;
+    }
+
+    #search-icon-button {
+        display: block;
+        border-radius: 15px;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters h3 {
+        margin-right: auto;
+    }
+
+    .chips-container {
+        flex-wrap: wrap;
+    }
+
+    .chip {
+        width: 48%;
+    }
+
+    /****** Footer ***********/
 
     footer {
         padding: 30px;

@@ -37,30 +37,34 @@
                 <p>En plein centre-ville ou en pleine nature</p>
 
                 <form>
-                    <label for="search-input"><i class="fa-solid fa-location-dot"></i></label>
+                    <label for="search-input"><i id="loc-search-icon" class="fa-solid fa-location-dot"></i></label>
                     <input type="search" id="search-input" value="Marseille, France"/>
-                    <button type="submit">Rechercher</button>
+                    <button id="search-text-button" type="submit">Rechercher</button>
+                    <button id="search-icon-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
 
-                <div class="filters-container">
+                <div class="filters">
                     <h3>Filtres</h3>
 
-                    <div class="chip">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <span>Économique</span>
+                    <div class="chips-container">
+                        <div class="chip">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <span>Économique</span>
+                        </div>
+                        <div class="chip">
+                            <i class="fa-solid fa-person"></i>
+                            <span>Familial</span>
+                        </div>
+                        <div class="chip">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Romantique</span>
+                        </div>
+                        <div class="chip">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>Nos pépites</span>
+                        </div>
                     </div>
-                    <div class="chip">
-                        <i class="fa-solid fa-person"></i>
-                        <span>Familial</span>
-                    </div>
-                    <div class="chip">
-                        <i class="fa-solid fa-heart"></i>
-                        <span>Romantique</span>
-                    </div>
-                    <div class="chip">
-                        <i class="fa-solid fa-fire"></i>
-                        <span>Nos pépites</span>
-                    </div>
+
 
                     </div>
 
