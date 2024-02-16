@@ -224,7 +224,7 @@ nav a.active {
     margin-bottom: 20px;
 }
 
-.accommodations .cards-container >  a {
+.accommodations .cards-container .card {
     width: 30%;
 }
 
@@ -370,10 +370,6 @@ footer .col {
         padding: 0;
     }
 
-    main {
-        padding: 30px 20px;
-    }
-
     /****** Header ***********/
 
     header {
@@ -410,6 +406,11 @@ footer .col {
 
     /****** Search ***********/
 
+    .search {
+
+        padding: 20px;
+    }
+
     .search form {
         margin: 15px auto;
     }
@@ -433,16 +434,72 @@ footer .col {
 
     .chips-container {
         flex-wrap: wrap;
+        gap: 20px 0;
+        justify-content: space-between;
     }
 
     .chip {
         width: 48%;
     }
 
+
+    /****** Accomodations & populars ***********/
+
+    .accommodations-and-populars {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+
+    /****** Most populars ***********/
+
+    .most-populars {
+        border-radius: 0;
+        padding: 20px;
+    }
+
+    .most-populars .cards-container {
+        flex-direction: column;
+    }
+
+
+    /****** Accomodations ***********/
+    .accommodations {
+        padding: 20px;
+        background-color: white;
+        border-radius: 0;
+    }
+
+    .accommodations .cards-container {
+        flex-direction: column;
+    }
+
+    .accommodations .cards-container .card {
+        width: 100%;
+    }
+
+    /****** Activities ***********/
+
+    .activities {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .activities .cards-container {
+        flex-direction: column;
+    }
+
+    .activities .card {
+        width: 100%;
+    }
+
+
     /****** Footer ***********/
 
     footer {
-        padding: 30px;
+        padding: 20px;
+        flex-direction: column;
+        gap: 50px;
     }
 
 }
