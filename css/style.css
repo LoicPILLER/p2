@@ -322,6 +322,7 @@ footer {
 
 footer .col {
     gap: 15px;
+    margin-right: auto;
 }
 
 
